@@ -37,7 +37,7 @@ def sendMessage(result):
 
     print(message.sid)
 
-@app.route("/")
+@app.route("/", methods=['POST','GET'])
 def index():
     jobDeadline = Function("jobDeadline")
     result= jobDeadline(status="created")
