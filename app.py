@@ -22,8 +22,8 @@ register(APPLICATION_ID, REST_API_KEY, master_key=MASTER_KEY)
 
 # Your Account Sid and Auth Token from twilio.com/console
 # DANGER! This is insecure. See http://twil.io/secure
-account_sid = 'ACf222c159d86982ce33ace73765d3d0d8'
-auth_token = '24f1d14690e391ef91bd473fbf120e64'
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
 client = Client(account_sid, auth_token)
 
 def sendMessage(result):
