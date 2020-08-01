@@ -28,7 +28,8 @@ client = Client(account_sid, auth_token)
 
 def sendMessage(result):
     text = 'Hey your file with file ID:'+result['result']['FileID'] +' is pending. Please start / finish the job quickly if not done already.'
-    message = client.messages.create(
+    message = client.messages \
+                    .create(
                         body=text,
                         from_='+15409057647',
                         to='+919791201860'
