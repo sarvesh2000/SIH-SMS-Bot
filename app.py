@@ -32,7 +32,17 @@ def sendMessage(result):
                     .create(
                         body=text,
                         from_='+15409057647',
-                        to='+919791201860'
+                        to=result['result']['ContactNumber']
+                    )
+
+    print(message.sid)
+
+    # send message to admin
+    message = client.messages \
+                    .create(
+                        body=text,
+                        from_='+15409057647',
+                        to=result['result']['adminContactNumber']
                     )
 
     print(message.sid)
