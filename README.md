@@ -1,7 +1,7 @@
 # SG296_ILUMINATI
-## SIH-telegram-bot
+## SIH-SMS-bot
 
-Repo for SIH-telegram-bot. Problem Statement SG296. Team ILUMINATI.
+Repo for SIH-SMS-bot. Problem Statement SG296. Team ILUMINATI.
 
 ### SMS Notification system
 The SMS Notification system sends a notification about the job status and pending work via SMS. It checks the server for the status of each job whether the it is completed, pending or if a new job is available also informs the officer of upcoming deadlines and higher priority jobs. A notification is sent once every three hours regarding the job status. 
